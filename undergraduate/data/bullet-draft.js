@@ -2,7 +2,7 @@
  * A draft: students see it only after the admin loads it and clicks
  * "Publish to students". Replaced by every fetch; do not edit by hand. */
 window.BULLET_DRAFT = {
- "fetchedAt": "2026-11-04T17:09:10Z",
+ "fetchedAt": "2026-11-16T14:04:29Z",
  "semester": 1,
  "academicYear": "2026/2027",
  "source": "Bullet API · Semester 1 2026/27",
@@ -6109,7 +6109,22 @@ window.BULLET_DRAFT = {
    "WeekdayName": "Thursday",
    "StartTime": "17:00",
    "EndTime": "20:00",
-   "Week": "2026-10-26,2026-11-02",
+   "Week": "2026-10-26",
+   "Annotations": "Workshops on November 5 (17.00-20.00), November 19 (17.00-20.00), November 24 (18.30-20.00) and December 3 (18.30-20.00).\n\nNovember 19 online session"
+  },
+  {
+   "ModuleName": "Social Impact and Volunteering",
+   "ModuleAcronym": "Soc Impact & Vol",
+   "ModuleCode": "L15.4352",
+   "Typology": "S",
+   "SectionName": "TP1",
+   "StudentGroup": "ELEC_UG",
+   "Unit": "T2",
+   "Classroom": "Classroom 507",
+   "WeekdayName": "Thursday",
+   "StartTime": "17:00",
+   "EndTime": "20:00",
+   "Week": "2026-11-02",
    "Annotations": "Workshops on November 5 (17.00-20.00), November 10 (17.00-20.00), November 12 (18.30-20.00) and November 26 (18.30-20.00)."
   },
   {
@@ -6120,12 +6135,27 @@ window.BULLET_DRAFT = {
    "SectionName": "TP1",
    "StudentGroup": "ELEC_UG",
    "Unit": "T2",
-   "Classroom": "Classroom 526",
+   "Classroom": "Auditorium 512",
+   "WeekdayName": "Thursday",
+   "StartTime": "17:00",
+   "EndTime": "20:00",
+   "Week": "2026-11-16",
+   "Annotations": "Workshops on November 5 (17.00-20.00), November 19 (17.00-20.00), November 24 (18.30-20.00) and December 3 (18.30-20.00).\r\n\r\nNovember 19 online session"
+  },
+  {
+   "ModuleName": "Social Impact and Volunteering",
+   "ModuleAcronym": "Soc Impact & Vol",
+   "ModuleCode": "L15.4352",
+   "Typology": "S",
+   "SectionName": "TP1",
+   "StudentGroup": "ELEC_UG",
+   "Unit": "T2",
+   "Classroom": "Classroom 529",
    "WeekdayName": "Thursday",
    "StartTime": "18:30",
    "EndTime": "20:00",
-   "Week": "2026-11-09,2026-11-23",
-   "Annotations": "Workshops on November 5 (17.00-20.00), November 10 (17.00-20.00), November 12 (18.30-20.00) and November 26 (18.30-20.00)."
+   "Week": "2026-11-30",
+   "Annotations": "Workshops on November 5 (17.00-20.00), November 19 (17.00-20.00), November 24 (18.30-20.00) and December 3 (18.30-20.00)."
   },
   {
    "ModuleName": "Social Impact and Volunteering",
@@ -6140,7 +6170,7 @@ window.BULLET_DRAFT = {
    "StartTime": "17:00",
    "EndTime": "20:00",
    "Week": "2026-10-26",
-   "Annotations": "Workshops on November 5 (17.00-20.00), November 10 (17.00-20.00), November 12 (18.30-20.00) and November 26 (18.30-20.00)."
+   "Annotations": "Workshops on November 5 (17.00-20.00), November 19 (17.00-20.00), November 24 (18.30-20.00) and December 3 (18.30-20.00).\n\nNovember 19 online session"
   },
   {
    "ModuleName": "Social Impact and Volunteering",
@@ -6150,12 +6180,12 @@ window.BULLET_DRAFT = {
    "SectionName": "TP1",
    "StudentGroup": "ELEC_UG",
    "Unit": "T2",
-   "Classroom": "Auditorium 512",
+   "Classroom": "Classroom 529",
    "WeekdayName": "Tuesday",
-   "StartTime": "17:00",
+   "StartTime": "18:30",
    "EndTime": "20:00",
-   "Week": "2026-11-09",
-   "Annotations": "Workshops on November 5 (17.00-20.00), November 10 (17.00-20.00), November 12 (18.30-20.00) and November 26 (18.30-20.00)."
+   "Week": "2026-11-23",
+   "Annotations": "Workshops on November 5 (17.00-20.00), November 19 (17.00-20.00), November 24 (18.30-20.00) and December 3 (18.30-20.00)."
   },
   {
    "ModuleName": "Sports Economics",

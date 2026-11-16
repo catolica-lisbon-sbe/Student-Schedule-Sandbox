@@ -2,7 +2,7 @@
  * A draft: students see it only after the admin loads it and clicks
  * "Publish to students". Replaced by every fetch; do not edit by hand. */
 window.BULLET_DRAFT = {
- "fetchedAt": "2026-11-04T17:09:10Z",
+ "fetchedAt": "2026-11-16T14:04:29Z",
  "semester": 1,
  "academicYear": "2026/2027",
  "source": "Bullet API · Semester 1 2026/27",
