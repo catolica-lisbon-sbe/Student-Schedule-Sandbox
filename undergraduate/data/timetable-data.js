@@ -2,8 +2,8 @@
  * To publish a new timetable, replace this file with the one downloaded
  * from the admin page (admin.html). Do not edit by hand. */
 window.SCHEDULE_DATA = {
- "generatedAt": "2026-11-04T17:11:28.554Z",
- "source": "Bullet API · Semester 1 2026/27 (fetched 2026-11-04)",
+ "generatedAt": "2026-11-16T14:07:29.942Z",
+ "source": "Bullet API · Semester 1 2026/27 (fetched 16 Nov 2026, 14:04)",
  "referenceWeeks": {
   "T1": "2026-09-07",
   "T2": "2026-10-26"
@@ -6111,7 +6111,22 @@ window.SCHEDULE_DATA = {
    "WeekdayName": "Thursday",
    "StartTime": "17:00",
    "EndTime": "20:00",
-   "Week": "2026-10-26,2026-11-02",
+   "Week": "2026-10-26",
+   "Annotations": "Workshops on November 5 (17.00-20.00), November 19 (17.00-20.00), November 24 (18.30-20.00) and December 3 (18.30-20.00).\n\nNovember 19 online session"
+  },
+  {
+   "ModuleName": "Social Impact and Volunteering",
+   "ModuleAcronym": "Soc Impact & Vol",
+   "ModuleCode": "L15.4352",
+   "Typology": "S",
+   "SectionName": "TP1",
+   "StudentGroup": "ELEC_UG",
+   "Unit": "T2",
+   "Classroom": "Classroom 507",
+   "WeekdayName": "Thursday",
+   "StartTime": "17:00",
+   "EndTime": "20:00",
+   "Week": "2026-11-02",
    "Annotations": "Workshops on November 5 (17.00-20.00), November 10 (17.00-20.00), November 12 (18.30-20.00) and November 26 (18.30-20.00)."
   },
   {
@@ -6122,12 +6137,27 @@ window.SCHEDULE_DATA = {
    "SectionName": "TP1",
    "StudentGroup": "ELEC_UG",
    "Unit": "T2",
-   "Classroom": "Classroom 526",
+   "Classroom": "Auditorium 512",
+   "WeekdayName": "Thursday",
+   "StartTime": "17:00",
+   "EndTime": "20:00",
+   "Week": "2026-11-16",
+   "Annotations": "Workshops on November 5 (17.00-20.00), November 19 (17.00-20.00), November 24 (18.30-20.00) and December 3 (18.30-20.00).\r\n\r\nNovember 19 online session"
+  },
+  {
+   "ModuleName": "Social Impact and Volunteering",
+   "ModuleAcronym": "Soc Impact & Vol",
+   "ModuleCode": "L15.4352",
+   "Typology": "S",
+   "SectionName": "TP1",
+   "StudentGroup": "ELEC_UG",
+   "Unit": "T2",
+   "Classroom": "Classroom 529",
    "WeekdayName": "Thursday",
    "StartTime": "18:30",
    "EndTime": "20:00",
-   "Week": "2026-11-09,2026-11-23",
-   "Annotations": "Workshops on November 5 (17.00-20.00), November 10 (17.00-20.00), November 12 (18.30-20.00) and November 26 (18.30-20.00)."
+   "Week": "2026-11-30",
+   "Annotations": "Workshops on November 5 (17.00-20.00), November 19 (17.00-20.00), November 24 (18.30-20.00) and December 3 (18.30-20.00)."
   },
   {
    "ModuleName": "Social Impact and Volunteering",
@@ -6142,7 +6172,7 @@ window.SCHEDULE_DATA = {
    "StartTime": "17:00",
    "EndTime": "20:00",
    "Week": "2026-10-26",
-   "Annotations": "Workshops on November 5 (17.00-20.00), November 10 (17.00-20.00), November 12 (18.30-20.00) and November 26 (18.30-20.00)."
+   "Annotations": "Workshops on November 5 (17.00-20.00), November 19 (17.00-20.00), November 24 (18.30-20.00) and December 3 (18.30-20.00).\n\nNovember 19 online session"
   },
   {
    "ModuleName": "Social Impact and Volunteering",
@@ -6152,12 +6182,12 @@ window.SCHEDULE_DATA = {
    "SectionName": "TP1",
    "StudentGroup": "ELEC_UG",
    "Unit": "T2",
-   "Classroom": "Auditorium 512",
+   "Classroom": "Classroom 529",
    "WeekdayName": "Tuesday",
-   "StartTime": "17:00",
+   "StartTime": "18:30",
    "EndTime": "20:00",
-   "Week": "2026-11-09",
-   "Annotations": "Workshops on November 5 (17.00-20.00), November 10 (17.00-20.00), November 12 (18.30-20.00) and November 26 (18.30-20.00)."
+   "Week": "2026-11-23",
+   "Annotations": "Workshops on November 5 (17.00-20.00), November 19 (17.00-20.00), November 24 (18.30-20.00) and December 3 (18.30-20.00)."
   },
   {
    "ModuleName": "Sports Economics",
