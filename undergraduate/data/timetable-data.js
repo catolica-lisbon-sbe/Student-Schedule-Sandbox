@@ -2,7 +2,7 @@
  * To publish a new timetable, replace this file with the one downloaded
  * from the admin page (admin.html). Do not edit by hand. */
 window.SCHEDULE_DATA = {
- "generatedAt": "2026-11-16T14:07:29.942Z",
+ "generatedAt": "2026-11-23T11:32:47.719Z",
  "source": "Bullet API · Semester 1 2026/27 (fetched 16 Nov 2026, 14:04)",
  "referenceWeeks": {
   "T1": "2026-09-07",
