@@ -182,12 +182,16 @@ def to_time(v):
 
 
 def site_of(raw):
-    """'master', 'undergraduate' or None, from the event type (EventType / EventTitle)."""
-    for text in (pick(raw, ['eventTypeName']), pick(raw, ['eventName'])):
-        for prefix, site in SITES.items():
-            if text.lower().startswith(prefix.lower()):
-                return site
-    return None
+    """'master', 'undergraduate' or None. The event type must be exactly one of SITES:
+    "Aula Mestrado Executivo" (Executive Masters) is another type and is left out.
+    Only when an event has no type is its title used (it must start with one of SITES)."""
+    typ = ' '.join(pick(raw, ['eventTypeName']).lower().split())
+    if typ:
+        return next((site for name, site in SITES.items() if typ == name.lower()), None)
+    title = ' '.join(pick(raw, ['eventName']).lower().split())
+    if title.startswith('aula mestrado execut'):
+        return None
+    return next((site for name, site in SITES.items() if title.startswith(name.lower())), None)
 
 
 def convert(raw):
