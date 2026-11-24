@@ -260,6 +260,12 @@ a { color: var(--blue-ink); }
   min-width: 92px;
 }
 .add-btn:hover { background: var(--blue); color: #fff; }
+/* An added course stays in the list: black button, "Remove ✕" on hover (removing = black) */
+.course-card.is-added { cursor: default; }
+.add-btn.is-added, .add-btn.is-added:hover { background: var(--remove); border-color: var(--remove); color: var(--on-remove); }
+.add-btn .when-hover { display: none; }
+.add-btn.is-added:hover .when-idle, .add-btn.is-added:focus-visible .when-idle { display: none; }
+.add-btn.is-added:hover .when-hover, .add-btn.is-added:focus-visible .when-hover { display: inline; }
 
 .cc-body { margin-top: 8px; }
 

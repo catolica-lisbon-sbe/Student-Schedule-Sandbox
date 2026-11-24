@@ -377,7 +377,8 @@
     $('unit').value = state.unit;
   }
 
-  // The course list holds the courses not added yet; added ones are tiles in Your courses.
+  // The course list holds every course; added ones stay in their place with a black
+  // "Added ✓" button that removes them (owner's choice), and are also tiles in Your courses.
   function renderList(list) {
     const q = fold(state.search.trim());
     const matches = c =>
@@ -388,10 +389,10 @@
     // The course whose section is being picked stays where it is in the list (owner's choice);
     // it moves to Your courses once a section is picked.
     if (state.selections.has(state.picking)) state.picking = '';
-    const rest = data.courses.filter(c => !state.selections.has(c.code) && (matches(c) || c.code === state.picking));
-    $('course-list').innerHTML = `<div class="list-divider">All courses · ${rest.length}</div>` +
-      (rest.map(c => cardHtml(c, list)).join('') ||
-        `<p class="cc-meta" style="padding:4px">No other courses match your search or filters.</p>`);
+    const shown = data.courses.filter(c => matches(c) || c.code === state.picking);
+    $('course-list').innerHTML = `<div class="list-divider">All courses · ${shown.length}</div>` +
+      (shown.map(c => cardHtml(c, list)).join('') ||
+        `<p class="cc-meta" style="padding:4px">No courses match your search or filters.</p>`);
   }
 
   // The sections of a course as a list of one-line buttons. Pointing at one (or moving to it
@@ -421,10 +422,15 @@
     const periods = course.units.map(u => unitNames.get(u) || u).join(' / ');
     const n = course.options.length;
     const what = n === 1 ? slotText(course.options[0]) : `${n} sections`;
-    return `<article class="course-card" draggable="true" data-code="${esc(course.code)}">
+    const added = state.selections.has(course.code);
+    const btn = added
+      ? `<button class="add-btn is-added" data-act="remove" aria-label="Remove ${esc(course.name)}">` +
+        `<span class="when-idle">Added ✓</span><span class="when-hover">Remove ✕</span></button>`
+      : `<button class="add-btn" data-act="add" aria-label="Add ${esc(course.name)}">+ Add</button>`;
+    return `<article class="course-card${added ? ' is-added' : ''}"${added ? '' : ' draggable="true"'} data-code="${esc(course.code)}">
       <div class="cc-head">
         <h3>${esc(course.name)}</h3>
-        <button class="add-btn" data-act="add" aria-label="Add ${esc(course.name)}">+ Add</button>
+        ${btn}
       </div>
       <div class="cc-meta">${esc([periods, what].filter(Boolean).join(' · '))}</div></article>`;
   }
@@ -842,6 +848,7 @@
     const btn = e.target.closest('button[data-act]');
     if (sec) addCourse(card.dataset.code, sec.dataset.opt);
     else if (btn && btn.dataset.act === 'add') addCourse(card.dataset.code);
+    else if (btn && btn.dataset.act === 'remove') removeCourse(card.dataset.code);
     else if (btn && btn.dataset.act === 'cancel') { state.picking = ''; state.preview = null; update(); }
   });
 
