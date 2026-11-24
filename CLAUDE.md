@@ -57,8 +57,10 @@ Undergraduate Programs. The root `index.html` and `admin.html` only redirect to 
 - **Undergraduate differences** (owner's choices): accent = brand **Verde Licenciaturas `#6CC9CC`**
   (brand book p. 30; the national colour is used when national and international programs appear
   together) with `#1F7F82` on white — the `--purple*` tokens are overridden under
-  `:root[data-site="undergraduate"]` at the end of `styles.css`. No Program filter (search + period only;
-  the page simply has no `#programme` select). Exams = planner **Cycle UG**, all three seasons (Midterms,
+  `:root[data-site="undergraduate"]` at the end of `styles.css`. Program filter like Master (added Nov 2026,
+  owner's choice): programs from StudentGroup (year and section dropped); electives (`ELEC_UG`, no program
+  of their own, over half the courses) are their own choice "Undergraduate Electives", not shown under
+  every program. Exams = planner **Cycle UG**, all three seasons (Midterms,
   Endterms, Final Exams) shown **with the planner's names**, because Endterms and Final Exams fall in the
   same trimester. No pre-enrolment sentence. Wording: "Undergraduate Programs".
 - Undergraduate groups look like `Y1_LIC_GEST_SECTION_2`, `Y2_IUP_BA_SECTION_REOFFER_1`, `Y1_PPE`;

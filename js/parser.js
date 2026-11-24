@@ -163,7 +163,7 @@
     MSc_Bus: 'MSc Business',
     MSc_Bus_Analytics: 'MSc Business Analytics',
     MSc_Econ: 'MSc Economics',
-    // Undergraduate (the undergraduate page has no Program filter; the names show on its admin page)
+    // Undergraduate (electives have no program: ELEC_UG is its own choice in the filter)
     ELEC_UG: 'Undergraduate Electives',
     IUP_BA: 'IUP Business Administration',
     IUP_EF: 'IUP Economics & Finance',
