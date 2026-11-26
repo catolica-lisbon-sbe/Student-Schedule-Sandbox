@@ -13,6 +13,7 @@
       examCycle: 'msc',                 // planner rows kept (Cycle column)
       examCycleLabel: 'Master (MSc)',
       seasonsByTerm: true,              // students see "Trimester 1", not "Midterms"
+      hiddenPrograms: [],               // program codes left out of the Program dropdown
       startHint: '<strong>If the Master Affairs team has already enrolled you in a section, pick that section.</strong> ' +
         'You can only choose your own section for electives.',
     },
@@ -22,6 +23,7 @@
       examCycle: 'ug',
       examCycleLabel: 'Undergraduate (UG)',
       seasonsByTerm: false,             // several seasons share a trimester: keep the planner's names
+      hiddenPrograms: ['PPE'],          // owner's choice: never offered in the Program dropdown
       startHint: '',
     },
   };

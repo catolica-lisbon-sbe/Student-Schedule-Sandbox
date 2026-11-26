@@ -42,6 +42,8 @@
     previewNotes.push(`the timetable uploaded on the admin page (“${preview.source || 'file'}”, ${when})`);
   }
   const data = S.buildDataset(source.rows || [], source.referenceWeeks);
+  // Programs this site leaves out of the Program dropdown (their courses still show under All programs).
+  data.programmes = data.programmes.filter(p => !(site.hiddenPrograms || []).includes(p.code));
 
   // Exam calendar: published file, or an admin preview saved in this browser.
   const EXAM_PREVIEW_KEY = site.key('examPreview.v1');

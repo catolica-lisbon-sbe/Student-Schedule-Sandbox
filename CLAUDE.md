@@ -60,7 +60,8 @@ Undergraduate Programs. The root `index.html` and `admin.html` only redirect to 
   `:root[data-site="undergraduate"]` at the end of `styles.css`. Program filter like Master (added Nov 2026,
   owner's choice): programs from StudentGroup (year and section dropped); electives (`ELEC_UG`, no program
   of their own, over half the courses) are their own choice "Undergraduate Electives", not shown under
-  every program. Exams = planner **Cycle UG**, all three seasons (Midterms,
+  every program. **PPE is never in the dropdown** (owner's choice, `hiddenPrograms` in `js/site.js`; its
+  courses still show under "All programs"). Exams = planner **Cycle UG**, all three seasons (Midterms,
   Endterms, Final Exams) shown **with the planner's names**, because Endterms and Final Exams fall in the
   same trimester. No pre-enrolment sentence. Wording: "Undergraduate Programs".
 - Undergraduate groups look like `Y1_LIC_GEST_SECTION_2`, `Y2_IUP_BA_SECTION_REOFFER_1`, `Y1_PPE`;
