@@ -84,7 +84,8 @@ Undergraduate Programs. The root `index.html` and `admin.html` only redirect to 
   "Your courses" tiles above the timetable, and added courses also stay in the course list with a black
   "Added ✓" / "Remove ✕" button; section lists never grow wider than the course card. Subtitle, in bold:
   "This does not replace your enrollment on Fenix." (owner's words) under the original subtitle "Plan your classes and exams, try different schedule options, and avoid overlaps before enrollment."
-  (only the bold line on phones).
+  (only the bold line on phones). Footer note starts with a bold "Disclaimer:" and ends "The timetables shown are not
+  binding and may change later."
 
 ## Files
 - `master/index.html`, `undergraduate/index.html` + `js/student.js` – student screen.
