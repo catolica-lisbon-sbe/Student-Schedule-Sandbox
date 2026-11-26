@@ -112,6 +112,7 @@ a { color: var(--blue-ink); }
   border-bottom: 1px solid var(--purple);
   text-align: center;
   font-size: 14px;
+  text-wrap: balance;   /* lines of about equal length (owner: "make the lines even") */
 }
 @media (max-width: 860px) { .beta-note { font-size: 13px; padding: 8px 12px; } .header-tabs { right: 16px; } }
 @media print { .beta-note { font-size: 10px; margin: 0 0 6px; } }
@@ -878,7 +879,10 @@ a { color: var(--blue-ink); }
 @media print {
   .mine-panel, .toast, .event.ghost { display: none !important; }
   .ex-chip { padding-right: 5px; }
-  .main-col { display: block; }
+  /* The printed page is narrow enough for the phone rules above, which hide the timetable
+     unless the phone "Timetable" tab is open (Chrome printed a blank page): always show it. */
+  .student .main-col { display: block !important; }
+  .title .sub-intro { display: inline; }
   .print-head { position: relative; }
   .print-stamp { position: absolute; right: 8px; top: 2px; display: inline-flex; }
   .print-stamp .stamp-name { max-width: none; }
