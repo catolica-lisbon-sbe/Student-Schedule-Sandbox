@@ -82,9 +82,9 @@ Undergraduate Programs. The root `index.html` and `admin.html` only redirect to 
   the root `js/`/`css/` (check the admin pages still work with it) and `preview/` is removed.
 - Some notes below describe the regular pages (e.g. "added courses pinned at the top"); the preview differs:
   "Your courses" tiles above the timetable, and added courses also stay in the course list with a black
-  "Added ✓" / "Remove ✕" button; section lists never grow wider than the course card. Subtitle (owner wanted it short):
-  "This does not replace your enrollment on Fenix." (owner's words) under "Try schedule options for your classes and exams, and
-  avoid overlaps." (only the bold line on phones).
+  "Added ✓" / "Remove ✕" button; section lists never grow wider than the course card. Subtitle, in bold:
+  "This does not replace your enrollment on Fenix." (owner's words) under the original subtitle "Plan your classes and exams, try different schedule options, and avoid overlaps before enrollment."
+  (only the bold line on phones).
 
 ## Files
 - `master/index.html`, `undergraduate/index.html` + `js/student.js` – student screen.
