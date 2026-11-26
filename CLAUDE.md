@@ -87,6 +87,10 @@ Undergraduate Programs. The root `index.html` and `admin.html` only redirect to 
   (only the bold line on phones; both lines when printed). Footer note (owner's text, lines balanced with
   `text-wrap: balance`): "**Disclaimer:** Schedule Sandbox is a beta planning tool, created for your convenience. … The timetables shown are not
   binding and may change later."
+- **Printing (preview)**: one A4 landscape page per part: page 1 = compact header + both trimester grids
+  (blocks 56px, names 13px); page 2 = exam lists, overlap/exam warnings (moved after the grids), course list,
+  disclaimer. The phone rules also apply when printing, so the print CSS forces the timetable to show
+  (it was hidden in Chrome, which printed only the header). Checked with Chrome "print to PDF".
 
 ## Files
 - `master/index.html`, `undergraduate/index.html` + `js/student.js` – student screen.

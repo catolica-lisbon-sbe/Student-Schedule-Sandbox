@@ -887,4 +887,29 @@ a { color: var(--blue-ink); }
   .print-stamp { position: absolute; right: 8px; top: 2px; display: inline-flex; }
   .print-stamp .stamp-name { max-width: none; }
   .ex-season h4 { margin-top: 8px; }
+
+  /* Readable printout: page 1 = header + both trimester grids, large enough to read;
+     the exam lists and the course list follow. Compact header and banners leave room for the grids. */
+  :root { --block-h: 56px; }
+  /* Overlap and exam warnings print after the grids (the grids show overlaps in red anyway). */
+  .tt-inner { display: flex; flex-direction: column; }
+  .tt-inner > .banner { order: 2; margin-top: 6px; }
+  .tt-inner > .print-list { order: 3; font-size: 11px; }
+  .app-header .inner { padding: 6px 12px; flex-wrap: nowrap; }
+  .logo { width: 150px; min-width: 150px; }
+  .app-header .title { width: auto; text-align: right; padding-bottom: 10px; }
+  .title .kicker { font-size: 9px; }
+  .title h1 { font-size: 18px; }
+  .title p { font-size: 10px; margin-top: 1px; }
+  .header-tabs { right: 12px; }
+  .beta-tab { font-size: 8px; padding: 1px 8px 0; }
+  .print-head h2 { font-size: 15px; }
+  .print-head p { margin: 0 0 4px !important; }
+  .print-stamp { top: -4px; transform: scale(.8); transform-origin: top right; }
+  .banner { font-size: 10px; padding: 3px 8px; margin-bottom: 4px; }
+  .banner ul { margin: 1px 0 0; }
+  .tt-term h3 { font-size: 11px; margin-bottom: 3px; }
+  .timetable { break-inside: avoid; }
+  .event b { font-size: 13px; }
+  .tt-term .ex-season { break-inside: avoid; }
 }
