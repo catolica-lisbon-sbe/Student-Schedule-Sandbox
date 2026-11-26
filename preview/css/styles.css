@@ -895,6 +895,7 @@ a { color: var(--blue-ink); }
   .tt-inner { display: flex; flex-direction: column; }
   .tt-inner > .banner { order: 2; margin-top: 6px; }
   .tt-inner > .print-list { order: 3; font-size: 11px; }
+  .print-list h4 { column-span: all; margin: 4px 0 4px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; }
   .app-header .inner { padding: 6px 12px; flex-wrap: nowrap; }
   .logo { width: 150px; min-width: 150px; }
   .app-header .title { width: auto; text-align: right; padding-bottom: 10px; }

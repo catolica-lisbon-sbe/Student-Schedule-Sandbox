@@ -831,7 +831,7 @@
     const list = entries();
     $('print-draft').textContent = currentDraft().name;
     $('print-week').textContent = [currentDraft().name, data.terms.map(t => t.label).join(' and ')].filter(Boolean).join(' · ');
-    $('print-list').innerHTML = list.map(e =>
+    $('print-list').innerHTML = (list.length ? '<h4>Your courses</h4>' : '') + list.map(e =>
       `<p><b>${esc(e.course.name)}</b> (${esc(e.course.code)}) – ${esc(e.option.label)}: ` +
       shownSessions(e.option).map(s => `${S.WEEKDAYS_SHORT[s.day]} ${timeRange(s)}${s.room ? ' ' + esc(s.room) : ''}`).join('; ') + '</p>').join('');
   }

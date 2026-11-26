@@ -89,7 +89,7 @@ Undergraduate Programs. The root `index.html` and `admin.html` only redirect to 
   binding and may change later."
 - **Printing (preview)**: one A4 landscape page per part: page 1 = compact header + both trimester grids
   (blocks 56px, names 13px); page 2 = exam lists, overlap/exam warnings (moved after the grids), course list,
-  disclaimer. The phone rules also apply when printing, so the print CSS forces the timetable to show
+  disclaimer. The course list has a "Your courses" heading. The phone rules also apply when printing, so the print CSS forces the timetable to show
   (it was hidden in Chrome, which printed only the header). Checked with Chrome "print to PDF".
 
 ## Files
