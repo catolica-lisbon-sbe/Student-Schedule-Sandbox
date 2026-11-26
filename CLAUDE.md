@@ -67,6 +67,23 @@ Undergraduate Programs. The root `index.html` and `admin.html` only redirect to 
 - Undergraduate groups look like `Y1_LIC_GEST_SECTION_2`, `Y2_IUP_BA_SECTION_REOFFER_1`, `Y1_PPE`;
   `programmeOf` drops the year and section → `LIC_GEST`, `IUP_BA`, `PPE` (names in `PROGRAM_NAMES`, shown on the admin page).
 
+## Preview = the version being worked on (since Nov 2026)
+- `preview/master/` and `preview/undergraduate/` hold the **new student page design** (hidden, `noindex`, not
+  linked), live at `…/Student-Schedule-Sandbox/preview/undergraduate/` and `…/preview/master/`.
+  **All student-page changes go here** (owner's choice); the regular `master/` and `undergraduate/` pages
+  are what students use today and are only changed when the owner asks.
+- The preview has its **own copies** of the code: `preview/js/` (student, site, parser, exams, theme) and
+  `preview/css/styles.css`, shared by both preview sites. Data, fonts and logos come from the root
+  (`../../<site>/data/…`, `../../assets/…`). A data-rule fix in `js/parser.js` / `js/exams.js` must also go
+  into the `preview/js/` copy (they already differ slightly). Admin pages have no preview: they stay at the root.
+- Cache busting: bump `?v=` in both `preview/*/index.html` when preview CSS/JS changes.
+- **Going live** (owner's plan): when the preview is ready for students, it replaces the regular pages and
+  "preview" is dropped from the address (`…/undergraduate/`, `…/master/`). Then the preview code becomes
+  the root `js/`/`css/` (check the admin pages still work with it) and `preview/` is removed.
+- Some notes below describe the regular pages (e.g. "added courses pinned at the top"); the preview differs:
+  "Your courses" tiles above the timetable, and added courses also stay in the course list with a black
+  "Added ✓" / "Remove ✕" button; section lists never grow wider than the course card.
+
 ## Files
 - `master/index.html`, `undergraduate/index.html` + `js/student.js` – student screen.
 - `master/admin.html`, `undergraduate/admin.html` + `js/admin.js` – (not linked from the student pages, owner's choice; `noindex`) upload, summary/warnings, preview, **Publish to students**, data file download, Excel template.
